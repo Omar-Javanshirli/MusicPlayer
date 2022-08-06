@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MusicPlayer
 {
-    public partial class Form1 : Form
+    public partial class SingerAbout : UserControl
     {
-        public Form1()
+        public SingerAbout()
         {
             InitializeComponent();
         }

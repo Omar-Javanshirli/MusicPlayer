@@ -1,6 +1,6 @@
 ﻿namespace MusicPlayer
 {
-    partial class SingerPhoto
+    partial class SingerAbout
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label4 = new System.Windows.Forms.Label();
-            this.ıconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
@@ -48,7 +46,9 @@
             this.SingerName1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.ıconPictureBox1)).BeginInit();
+            this.searchButton = new FontAwesome.Sharp.IconButton();
+            this.searchTb = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
             this.guna2GradientPanel1.SuspendLayout();
             this.guna2GradientPanel2.SuspendLayout();
             this.guna2GradientPanel3.SuspendLayout();
@@ -57,31 +57,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(61)))));
-            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(138, 10);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 16);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Search music";
-            // 
-            // ıconPictureBox1
-            // 
-            this.ıconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(18)))), ((int)(((byte)(38)))));
-            this.ıconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Search;
-            this.ıconPictureBox1.IconColor = System.Drawing.Color.White;
-            this.ıconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ıconPictureBox1.IconSize = 24;
-            this.ıconPictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.ıconPictureBox1.Name = "ıconPictureBox1";
-            this.ıconPictureBox1.Size = new System.Drawing.Size(25, 24);
-            this.ıconPictureBox1.TabIndex = 7;
-            this.ıconPictureBox1.TabStop = false;
             // 
             // label3
             // 
@@ -107,21 +82,22 @@
             // 
             // guna2GradientPanel1
             // 
+            this.guna2GradientPanel1.BorderColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.guna2GradientPanel1.Controls.Add(this.searchTb);
             this.guna2GradientPanel1.Controls.Add(this.guna2GradientPanel2);
             this.guna2GradientPanel1.Controls.Add(this.label2);
-            this.guna2GradientPanel1.Controls.Add(this.label4);
             this.guna2GradientPanel1.Controls.Add(this.label3);
             this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(61)))));
             this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(24)))), ((int)(((byte)(50)))));
             this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(972, 30);
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(1005, 30);
             this.guna2GradientPanel1.TabIndex = 9;
             // 
             // guna2GradientPanel2
             // 
-            this.guna2GradientPanel2.Controls.Add(this.ıconPictureBox1);
+            this.guna2GradientPanel2.Controls.Add(this.searchButton);
             this.guna2GradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(61)))));
             this.guna2GradientPanel2.Location = new System.Drawing.Point(91, 4);
             this.guna2GradientPanel2.Name = "guna2GradientPanel2";
@@ -148,7 +124,7 @@
             this.guna2GradientPanel3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(24)))), ((int)(((byte)(50)))));
             this.guna2GradientPanel3.Location = new System.Drawing.Point(0, 30);
             this.guna2GradientPanel3.Name = "guna2GradientPanel3";
-            this.guna2GradientPanel3.Size = new System.Drawing.Size(972, 243);
+            this.guna2GradientPanel3.Size = new System.Drawing.Size(1005, 242);
             this.guna2GradientPanel3.TabIndex = 11;
             // 
             // songName4
@@ -311,16 +287,72 @@
             this.label1.TabIndex = 12;
             this.label1.Text = "Explore New";
             // 
-            // SingerPhoto
+            // searchButton
+            // 
+            this.searchButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(61)))));
+            this.searchButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(61)))));
+            this.searchButton.FlatAppearance.BorderSize = 0;
+            this.searchButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.searchButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(61)))));
+            this.searchButton.IconChar = FontAwesome.Sharp.IconChar.Search;
+            this.searchButton.IconColor = System.Drawing.Color.White;
+            this.searchButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.searchButton.IconSize = 20;
+            this.searchButton.Location = new System.Drawing.Point(2, 2);
+            this.searchButton.Name = "searchButton";
+            this.searchButton.Size = new System.Drawing.Size(26, 23);
+            this.searchButton.TabIndex = 25;
+            this.searchButton.UseVisualStyleBackColor = false;
+            // 
+            // searchTb
+            // 
+            this.searchTb.AutoRoundedCorners = true;
+            this.searchTb.BorderColor = System.Drawing.Color.White;
+            this.searchTb.BorderRadius = 10;
+            this.searchTb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.searchTb.DefaultText = "Search music";
+            this.searchTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.searchTb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.searchTb.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.searchTb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.searchTb.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(61)))));
+            this.searchTb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.searchTb.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.searchTb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.searchTb.Location = new System.Drawing.Point(137, 6);
+            this.searchTb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.searchTb.Name = "searchTb";
+            this.searchTb.PasswordChar = '\0';
+            this.searchTb.PlaceholderForeColor = System.Drawing.Color.White;
+            this.searchTb.PlaceholderText = "";
+            this.searchTb.SelectedText = "";
+            this.searchTb.SelectionStart = 12;
+            this.searchTb.Size = new System.Drawing.Size(229, 23);
+            this.searchTb.TabIndex = 11;
+            // 
+            // guna2ContextMenuStrip1
+            // 
+            this.guna2ContextMenuStrip1.Name = "guna2ContextMenuStrip1";
+            this.guna2ContextMenuStrip1.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.guna2ContextMenuStrip1.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
+            this.guna2ContextMenuStrip1.RenderStyle.ColorTable = null;
+            this.guna2ContextMenuStrip1.RenderStyle.RoundedEdges = true;
+            this.guna2ContextMenuStrip1.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
+            this.guna2ContextMenuStrip1.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.guna2ContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.guna2ContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
+            this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // SingerAbout
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(18)))), ((int)(((byte)(38)))));
             this.Controls.Add(this.guna2GradientPanel3);
             this.Controls.Add(this.guna2GradientPanel1);
-            this.Name = "SingerPhoto";
-            this.Size = new System.Drawing.Size(972, 270);
-            ((System.ComponentModel.ISupportInitialize)(this.ıconPictureBox1)).EndInit();
+            this.Name = "SingerAbout";
+            this.Size = new System.Drawing.Size(1005, 272);
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
             this.guna2GradientPanel2.ResumeLayout(false);
@@ -335,8 +367,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label4;
-        private FontAwesome.Sharp.IconPictureBox ıconPictureBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
@@ -355,5 +385,8 @@
         private System.Windows.Forms.Label songName1;
         private System.Windows.Forms.Label SingerName1;
         private Guna.UI2.WinForms.Guna2PictureBox pictureBox1;
+        private FontAwesome.Sharp.IconButton searchButton;
+        private Guna.UI2.WinForms.Guna2TextBox searchTb;
+        private Guna.UI2.WinForms.Guna2ContextMenuStrip guna2ContextMenuStrip1;
     }
 }
