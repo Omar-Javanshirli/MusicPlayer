@@ -17,7 +17,10 @@ namespace MusicPlayer
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            var view = new Form1();
+            var presenter =new MainPresenter(view);
+            Application.Run(view);
         }
     }
 }

@@ -57,6 +57,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ModelsSingerPhoto\Singer.cs" />
+    <Compile Include="Music.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Music.Designer.cs">
+      <DependentUpon>Music.cs</DependentUpon>
+    </Compile>
     <Compile Include="PresentersSingerAbout\MainPresenterSingerAbout.cs" />
     <Compile Include="Presenters\MainPresenter.cs" />
     <Compile Include="ViewsSingerPhoto\IMainViewSingerAbout.cs" />
@@ -75,6 +81,9 @@
     <Compile Include="ViewsSingerPhoto\SingerAbout.Designer.cs">
       <DependentUpon>SingerAbout.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Music.resx">
+      <DependentUpon>Music.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\MainViews.resx">
       <DependentUpon>MainViews.cs</DependentUpon>
     </EmbeddedResource>

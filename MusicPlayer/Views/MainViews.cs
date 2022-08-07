@@ -1,4 +1,5 @@
-﻿using MusicPlayer.Views;
+﻿
+using MusicPlayer.Views;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -24,35 +25,39 @@ namespace MusicPlayer
         public EventHandler<EventArgs> AlbumsButton { get; set; }
         public EventHandler<EventArgs> StoreButton { get; set; }
         public EventHandler<EventArgs> ForYouButton { get; set; }
+        public SingerAbout singerAbout { get ; set ; }
+        public Panel panel { get=>mainPanel; set=>mainPanel=value; } 
 
-        private void playlistBtn_Click(object sender, EventArgs e)
-        {
-            PlaylistButton.Invoke(sender,e);
-        }
+
 
         private void artistsBtn_Click(object sender, EventArgs e)
         {
-            ArtistButton.Invoke(sender,e);
+            ArtistButton.Invoke(sender, e);
         }
 
         private void albumsBtn_Click(object sender, EventArgs e)
         {
-            AlbumsButton.Invoke(sender,e);
+            AlbumsButton.Invoke(sender, e);
         }
 
         private void songsBtn_Click(object sender, EventArgs e)
         {
-            SongsButton.Invoke(sender,e);
+            SongsButton.Invoke(sender, e);
         }
 
         private void storeBtn_Click(object sender, EventArgs e)
         {
-            StoreButton.Invoke(sender,e);
+            StoreButton.Invoke(sender, e);
         }
 
         private void forYouBtn_Click(object sender, EventArgs e)
         {
-            ForYouButton.Invoke(sender,e);
+            ForYouButton.Invoke(sender, e);
+        }
+
+        private void playlistBtn_Click_1(object sender, EventArgs e)
+        {
+            PlaylistButton.Invoke(sender, e);
         }
     }
 }

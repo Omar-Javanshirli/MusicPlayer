@@ -38,7 +38,7 @@
             this.playlistBtn = new FontAwesome.Sharp.IconButton();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.mainPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.mainPanel = new System.Windows.Forms.Panel();
             this.guna2GradientPanel1.SuspendLayout();
             this.guna2GradientPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -57,12 +57,12 @@
             this.guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(61)))));
             this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(208, 630);
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(208, 577);
             this.guna2GradientPanel1.TabIndex = 0;
             // 
             // forYouBtn
             // 
-            this.forYouBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(61)))));
+            this.forYouBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(18)))), ((int)(((byte)(38)))));
             this.forYouBtn.Dock = System.Windows.Forms.DockStyle.Top;
             this.forYouBtn.FlatAppearance.BorderSize = 0;
             this.forYouBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -86,7 +86,7 @@
             // 
             // storeBtn
             // 
-            this.storeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(61)))));
+            this.storeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(18)))), ((int)(((byte)(38)))));
             this.storeBtn.Dock = System.Windows.Forms.DockStyle.Top;
             this.storeBtn.FlatAppearance.BorderSize = 0;
             this.storeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -119,7 +119,7 @@
             // 
             // songsBtn
             // 
-            this.songsBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(61)))));
+            this.songsBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(18)))), ((int)(((byte)(38)))));
             this.songsBtn.Dock = System.Windows.Forms.DockStyle.Top;
             this.songsBtn.FlatAppearance.BorderSize = 0;
             this.songsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -143,7 +143,7 @@
             // 
             // albumsBtn
             // 
-            this.albumsBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(61)))));
+            this.albumsBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(18)))), ((int)(((byte)(38)))));
             this.albumsBtn.Dock = System.Windows.Forms.DockStyle.Top;
             this.albumsBtn.FlatAppearance.BorderSize = 0;
             this.albumsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -167,7 +167,7 @@
             // 
             // artistsBtn
             // 
-            this.artistsBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(61)))));
+            this.artistsBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(18)))), ((int)(((byte)(38)))));
             this.artistsBtn.Dock = System.Windows.Forms.DockStyle.Top;
             this.artistsBtn.FlatAppearance.BorderSize = 0;
             this.artistsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -191,7 +191,7 @@
             // 
             // playlistBtn
             // 
-            this.playlistBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(61)))));
+            this.playlistBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(18)))), ((int)(((byte)(38)))));
             this.playlistBtn.Dock = System.Windows.Forms.DockStyle.Top;
             this.playlistBtn.FlatAppearance.BorderSize = 0;
             this.playlistBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -211,7 +211,7 @@
             this.playlistBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.playlistBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.playlistBtn.UseVisualStyleBackColor = false;
-            this.playlistBtn.Click += new System.EventHandler(this.playlistBtn_Click);
+            this.playlistBtn.Click += new System.EventHandler(this.playlistBtn_Click_1);
             // 
             // guna2GradientPanel2
             // 
@@ -239,7 +239,7 @@
             this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainPanel.Location = new System.Drawing.Point(208, 0);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(1048, 630);
+            this.mainPanel.Size = new System.Drawing.Size(995, 577);
             this.mainPanel.TabIndex = 1;
             // 
             // Form1
@@ -247,7 +247,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(18)))), ((int)(((byte)(38)))));
-            this.ClientSize = new System.Drawing.Size(1256, 630);
+            this.ClientSize = new System.Drawing.Size(1203, 577);
             this.Controls.Add(this.mainPanel);
             this.Controls.Add(this.guna2GradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -273,7 +273,7 @@
         private FontAwesome.Sharp.IconButton songsBtn;
         private FontAwesome.Sharp.IconButton albumsBtn;
         private FontAwesome.Sharp.IconButton artistsBtn;
-        private Guna.UI2.WinForms.Guna2GradientPanel mainPanel;
+        private System.Windows.Forms.Panel mainPanel;
     }
 }
 

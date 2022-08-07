@@ -20,6 +20,10 @@ namespace MusicPlayer.Presenters
         public void ViewPlaylistButton(object sender, EventArgs e)
         {
             SingerAbout singerAbout= new SingerAbout();
+            _view.singerAbout = singerAbout;
+            singerAbout.Dock=System.Windows.Forms.DockStyle.Fill;
+            _view.panel.Controls.Add(singerAbout);
+
         }
     }
 }

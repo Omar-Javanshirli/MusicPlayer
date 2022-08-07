@@ -10,11 +10,13 @@ using System.Windows.Forms;
 
 namespace MusicPlayer
 {
-    public partial class SingerAbout : UserControl
+    public partial class Music : UserControl
     {
-        public SingerAbout()
+        public Music()
         {
             InitializeComponent();
         }
+
+
     }
 }
