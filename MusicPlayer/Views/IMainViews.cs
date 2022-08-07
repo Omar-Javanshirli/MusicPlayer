@@ -18,6 +18,8 @@ namespace MusicPlayer.Views
         EventHandler<EventArgs> StoreButton { get; set; }
         EventHandler<EventArgs> ForYouButton { get; set; }
         SingerAbout singerAbout { get; set; }
-        System.Windows.Forms.Panel panel { get; set; }
+        Music music { get; set; }
+        System.Windows.Forms.Panel singerAboutPanel { get; set; }
+        System.Windows.Forms.Panel MusicPanel { get; set; }
     }
 }

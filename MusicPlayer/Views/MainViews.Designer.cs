@@ -39,8 +39,10 @@
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.mainPanel = new System.Windows.Forms.Panel();
+            this.mainMusicPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2GradientPanel1.SuspendLayout();
             this.guna2GradientPanel2.SuspendLayout();
+            this.mainPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2GradientPanel1
@@ -236,11 +238,20 @@
             // 
             // mainPanel
             // 
+            this.mainPanel.Controls.Add(this.mainMusicPanel);
             this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainPanel.Location = new System.Drawing.Point(208, 0);
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Size = new System.Drawing.Size(995, 577);
             this.mainPanel.TabIndex = 1;
+            // 
+            // mainMusicPanel
+            // 
+            this.mainMusicPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.mainMusicPanel.Location = new System.Drawing.Point(0, 313);
+            this.mainMusicPanel.Name = "mainMusicPanel";
+            this.mainMusicPanel.Size = new System.Drawing.Size(995, 264);
+            this.mainMusicPanel.TabIndex = 0;
             // 
             // Form1
             // 
@@ -257,6 +268,7 @@
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel2.ResumeLayout(false);
             this.guna2GradientPanel2.PerformLayout();
+            this.mainPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -274,6 +286,7 @@
         private FontAwesome.Sharp.IconButton albumsBtn;
         private FontAwesome.Sharp.IconButton artistsBtn;
         private System.Windows.Forms.Panel mainPanel;
+        private Guna.UI2.WinForms.Guna2GradientPanel mainMusicPanel;
     }
 }
 

@@ -25,10 +25,10 @@ namespace MusicPlayer
         public EventHandler<EventArgs> AlbumsButton { get; set; }
         public EventHandler<EventArgs> StoreButton { get; set; }
         public EventHandler<EventArgs> ForYouButton { get; set; }
-        public SingerAbout singerAbout { get ; set ; }
-        public Panel panel { get=>mainPanel; set=>mainPanel=value; } 
-
-
+        public SingerAbout singerAbout { get; set; }
+        public Panel singerAboutPanel { get => mainPanel; set => mainPanel = value; }
+        public Music music { get; set; }
+        public Panel MusicPanel { get => mainMusicPanel; set => mainMusicPanel = (Guna.UI2.WinForms.Guna2GradientPanel)value; }
 
         private void artistsBtn_Click(object sender, EventArgs e)
         {

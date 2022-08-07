@@ -22,8 +22,10 @@ namespace MusicPlayer.Presenters
             SingerAbout singerAbout= new SingerAbout();
             _view.singerAbout = singerAbout;
             singerAbout.Dock=System.Windows.Forms.DockStyle.Fill;
-            _view.panel.Controls.Add(singerAbout);
-
+            _view.singerAboutPanel.Controls.Add(singerAbout);
+            Music music =new Music();
+            _view.music=music;
+            _view.MusicPanel.Controls.Add(music);
         }
     }
 }
