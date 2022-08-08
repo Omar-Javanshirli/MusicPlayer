@@ -6,10 +6,14 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Media;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Media;
 
 namespace MusicPlayer
 {
@@ -18,6 +22,20 @@ namespace MusicPlayer
         public Form1()
         {
             InitializeComponent();
+
+            //SoundPlayer soundPlayer = null;
+            //using (WebClient webClient = new WebClient())
+            //{
+            //    byte[] data = webClient.DownloadData(@"https://soundcloud.com/user-616200117/monamie?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing");
+
+            //    using (MemoryStream mem = new MemoryStream())
+            //    {
+            //        mem.Write(data, 0, data.Length);
+            //        soundPlayer=new SoundPlayer(mem);
+            //    }
+            //}
+            //soundPlayer.Play();
+
         }
 
         public EventHandler<EventArgs> PlaylistButton { get; set; }
@@ -30,7 +48,6 @@ namespace MusicPlayer
         public Panel singerAboutPanel { get => mainPanel; set => mainPanel = value; }
         public Music music { get; set; }
         public Panel MusicPanel { get => mainMusicPanel; set => mainMusicPanel = (Guna.UI2.WinForms.Guna2GradientPanel)value; }
-        public ListBox Musics { get => musicListBox; set => musicListBox=value; }
 
         private void artistsBtn_Click(object sender, EventArgs e)
         {

@@ -40,11 +40,8 @@
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.mainPanel = new System.Windows.Forms.Panel();
             this.mainMusicPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.musicListBox = new System.Windows.Forms.ListBox();
             this.guna2GradientPanel1.SuspendLayout();
             this.guna2GradientPanel2.SuspendLayout();
-            this.mainPanel.SuspendLayout();
-            this.mainMusicPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2GradientPanel1
@@ -240,31 +237,19 @@
             // 
             // mainPanel
             // 
-            this.mainPanel.Controls.Add(this.mainMusicPanel);
-            this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.mainPanel.Location = new System.Drawing.Point(208, 0);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(995, 577);
+            this.mainPanel.Size = new System.Drawing.Size(995, 310);
             this.mainPanel.TabIndex = 1;
             // 
             // mainMusicPanel
             // 
-            this.mainMusicPanel.Controls.Add(this.musicListBox);
-            this.mainMusicPanel.Location = new System.Drawing.Point(0, 313);
+            this.mainMusicPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.mainMusicPanel.Location = new System.Drawing.Point(214, 316);
             this.mainMusicPanel.Name = "mainMusicPanel";
-            this.mainMusicPanel.Size = new System.Drawing.Size(582, 264);
-            this.mainMusicPanel.TabIndex = 0;
-            // 
-            // musicListBox
-            // 
-            this.musicListBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(18)))), ((int)(((byte)(38)))));
-            this.musicListBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.musicListBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.musicListBox.FormattingEnabled = true;
-            this.musicListBox.Location = new System.Drawing.Point(0, 0);
-            this.musicListBox.Name = "musicListBox";
-            this.musicListBox.Size = new System.Drawing.Size(582, 264);
-            this.musicListBox.TabIndex = 0;
+            this.mainMusicPanel.Size = new System.Drawing.Size(587, 264);
+            this.mainMusicPanel.TabIndex = 2;
             // 
             // Form1
             // 
@@ -272,6 +257,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(18)))), ((int)(((byte)(38)))));
             this.ClientSize = new System.Drawing.Size(1203, 577);
+            this.Controls.Add(this.mainMusicPanel);
             this.Controls.Add(this.mainPanel);
             this.Controls.Add(this.guna2GradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -281,8 +267,6 @@
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel2.ResumeLayout(false);
             this.guna2GradientPanel2.PerformLayout();
-            this.mainPanel.ResumeLayout(false);
-            this.mainMusicPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -301,7 +285,6 @@
         private FontAwesome.Sharp.IconButton artistsBtn;
         private System.Windows.Forms.Panel mainPanel;
         private Guna.UI2.WinForms.Guna2GradientPanel mainMusicPanel;
-        private System.Windows.Forms.ListBox musicListBox;
     }
 }
 

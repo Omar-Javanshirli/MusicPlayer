@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MusicPlayer.PresentersSingerAbout
 {
-    internal class MainPresenterSingerAbout
+    public class MainPresenterSingerAbout
     {
         private readonly IMainViewSingerAbout _view;
 

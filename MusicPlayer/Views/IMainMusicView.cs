@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace MusicPlayer.MusicView
 {
-    internal interface IMainMusicView
+    public interface IMainMusicView
     {
-        Image image { get; set; }
+        string Image { get; set; }
         string IdLbl { get; set; }
         string SongNameLbl { get; set; }
         EventHandler<EventArgs> ForYouButtonClik { get; set; }

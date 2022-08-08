@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace MusicPlayer.MusicPresenter
 {
-    internal class MusicPresenter
+    public class MusicPresenter
     {
         private readonly IMainMusicView _view;
         private readonly SongContext _db;
@@ -22,18 +22,18 @@ namespace MusicPlayer.MusicPresenter
 
             _view.ForYouButtonClik += ViewForYouButtonClick;
         }
-
+       
         public void ViewForYouButtonClick(object sender,EventArgs e)
         {
-            MusicAbout musicAbout = new MusicAbout()
-            {
-                Image = _view.image,
-                MusicReyting = int.Parse(_view.IdLbl),
-                SongName = _view.SongNameLbl
-            };
+            //MusicAbout musicAbout = new MusicAbout()
+            //{
+            //    Image = _view.image,
+            //    MusicReyting = int.Parse(_view.IdLbl),
+            //    SongName = _view.SongNameLbl
+            //};
             
-            _db.Musics.Add(musicAbout);
-            _db.SaveChanges();
+            //_db.Musics.Add(musicAbout);
+            //_db.SaveChanges();
         }
     }
 }

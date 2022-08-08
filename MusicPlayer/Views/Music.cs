@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -17,9 +18,17 @@ namespace MusicPlayer
         public Music()
         {
             InitializeComponent();
+
         }
 
-        public Image image { get => singersPhoto.Image; set => singersPhoto.Image=value; }
+        public string Image { get => singersPhoto.ImageLocation; set {
+                var request = WebRequest.Create(value);
+                using (var response = request.GetResponse())
+                using (var stream = response.GetResponseStream())
+                {
+                    singersPhoto.Image = Bitmap.FromStream(stream);
+                }
+            } }
         public string IdLbl { get => numberLbl.Text; set => numberLbl.Text=value; }
         public string SongNameLbl { get => musicName.Text; set => musicName.Text = value; }
         public EventHandler<EventArgs> ForYouButtonClik { get; set; }

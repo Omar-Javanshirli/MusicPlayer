@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MusicPlayer.ViewsSingerPhoto
 {
-    internal interface IMainViewSingerAbout
+    public interface IMainViewSingerAbout
     {
         Image SingerPhoto1 { get; set; }
         Image SingerPhoto2 { get; set; }

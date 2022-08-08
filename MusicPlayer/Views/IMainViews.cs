@@ -21,6 +21,6 @@ namespace MusicPlayer.Views
         SingerAbout singerAbout { get; set; }
         Music music { get; set; }
         System.Windows.Forms.Panel singerAboutPanel { get; set; }
-        System.Windows.Forms.ListBox Musics { get; set; }
+        System.Windows.Forms.Panel MusicPanel { get; set; }
     }
 }

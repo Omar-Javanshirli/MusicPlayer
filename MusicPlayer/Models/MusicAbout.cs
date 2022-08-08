@@ -5,13 +5,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MusicPlayer.ModelsSingerPhoto
+namespace MusicPlayer.MusicModels
 {
-    internal class Singer
+    public class MusicAbout
     {
-        public string SingerName { get; set; }
+        public int Id { get; set; }
+        public string Image { get; set; }
         public string SongName { get; set; }
-        public Image SingerImage { get; set; }
-
+        public int MusicReyting { get; set; }
     }
 }
