@@ -28,16 +28,24 @@ namespace MusicPlayer.Presenters
             LoadFirstPage();
         }
 
-
-
         void LoadFirstPage()
         {
             SingerAbout singerAbout = new SingerAbout();
             _view.singerAbout = singerAbout;
             singerAbout.Dock = System.Windows.Forms.DockStyle.Fill;
             _view.singerAboutPanel.Controls.Add(singerAbout);
+
+            SingerUc singerUc = new SingerUc();
+            singerUc.Location = new Point(65,20);
+            _view.SingersPanel.Controls.Add(singerUc);
+
+            SingerNameAndSongNameUc singerNameAndSongNameUc = new SingerNameAndSongNameUc();
+            singerNameAndSongNameUc.Location = new Point(65, 160);
+            _view.SingersPanel.Controls.Add(singerNameAndSongNameUc);
+
             var musics = _db.Musics;
             int y = 10;
+            int x = 300;
             foreach (var m in musics)
             {
                 var music = new Music();
@@ -48,24 +56,31 @@ namespace MusicPlayer.Presenters
                 music.SongNameLbl = m.SongName.ToString();
                 _view.MusicPanel.Controls.Add(music);
             }
+            foreach (var item in musics)
+            {
+                var singer = new SingerUc();
+                singer.Location= new Point(x,23);
+                x += 250;
+                _view.SingersPanel.Controls.Add(singer);
+            }
         }
-
         public void Load()
         {
             MusicAbout musicAbout = new MusicAbout()
             {
                 Image = @"https://cdn-icons-png.flaticon.com/512/3844/3844724.png",
                 MusicReyting = 12,
-                SongName = "Edd Sheron"
+                SongName = "Love Song",
+                SingerName="Zak Abel"
             };
-
             _db.Musics.Add(musicAbout);
 
             musicAbout = new MusicAbout()
             {
                 Image = @"https://cdn-icons-png.flaticon.com/512/3844/3844724.png",
                 MusicReyting = 9,
-                SongName = "Namiq Qarachuxurlu"
+                SongName = "Kombucha Burps",
+                SingerName="Kendrik lamar"
             };
             _db.Musics.Add(musicAbout);
 
@@ -73,38 +88,18 @@ namespace MusicPlayer.Presenters
             {
                 Image = @"https://cdn-icons-png.flaticon.com/512/3844/3844724.png",
                 MusicReyting = 12,
-                SongName = "Rihanna Diamond"
+                SongName = "Mask Off Soul Flip",
+                SingerName = "Esta"
             };
-
             _db.Musics.Add(musicAbout);
-
             _db.SaveChanges();
         }
-
         public void ViewPlaylistButton(object sender, EventArgs e)
         {
 
             _view.singerAboutPanel.Controls.Clear();
             _view.MusicPanel.Controls.Clear();
             LoadFirstPage();
-
-
-            //SingerAbout singerAbout = new SingerAbout();
-            //_view.singerAbout = singerAbout;
-            //singerAbout.Dock = System.Windows.Forms.DockStyle.Fill;
-            //_view.singerAboutPanel.Controls.Add(singerAbout);
-            //var musics = _db.Musics;
-            //int y = 10;
-            //foreach (var m in musics)
-            //{
-            //    var music = new Music();
-            //    music.Location = new Point(0, y);
-            //    y += 70;
-            //    music.Image = m.Image;
-            //    music.IdLbl = m.Id.ToString();
-            //    music.SongNameLbl = m.SongName.ToString();
-            //    _view.Musics.Controls.Add(music);
-            //}
         }
     }
 }

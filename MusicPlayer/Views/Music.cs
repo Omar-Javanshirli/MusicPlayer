@@ -1,4 +1,5 @@
-﻿using MusicPlayer.MusicModels;
+﻿using MusicPlayer.Models;
+using MusicPlayer.MusicModels;
 using MusicPlayer.MusicView;
 using System;
 using System.Collections.Generic;
@@ -22,12 +23,7 @@ namespace MusicPlayer
         }
 
         public string Image { get => singersPhoto.ImageLocation; set {
-                var request = WebRequest.Create(value);
-                using (var response = request.GetResponse())
-                using (var stream = response.GetResponseStream())
-                {
-                    singersPhoto.Image = Bitmap.FromStream(stream);
-                }
+                Helper.GetImage(value, singersPhoto);
             } }
         public string IdLbl { get => numberLbl.Text; set => numberLbl.Text=value; }
         public string SongNameLbl { get => musicName.Text; set => musicName.Text = value; }

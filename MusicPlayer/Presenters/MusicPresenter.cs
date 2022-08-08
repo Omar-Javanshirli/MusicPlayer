@@ -25,15 +25,7 @@ namespace MusicPlayer.MusicPresenter
        
         public void ViewForYouButtonClick(object sender,EventArgs e)
         {
-            //MusicAbout musicAbout = new MusicAbout()
-            //{
-            //    Image = _view.image,
-            //    MusicReyting = int.Parse(_view.IdLbl),
-            //    SongName = _view.SongNameLbl
-            //};
-            
-            //_db.Musics.Add(musicAbout);
-            //_db.SaveChanges();
+
         }
     }
 }

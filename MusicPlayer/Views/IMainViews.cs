@@ -22,5 +22,6 @@ namespace MusicPlayer.Views
         Music music { get; set; }
         System.Windows.Forms.Panel singerAboutPanel { get; set; }
         System.Windows.Forms.Panel MusicPanel { get; set; }
+        System.Windows.Forms.Panel SingersPanel { get; set; }
     }
 }

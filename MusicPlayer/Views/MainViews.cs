@@ -35,7 +35,6 @@ namespace MusicPlayer
             //    }
             //}
             //soundPlayer.Play();
-
         }
 
         public EventHandler<EventArgs> PlaylistButton { get; set; }
@@ -45,9 +44,10 @@ namespace MusicPlayer
         public EventHandler<EventArgs> StoreButton { get; set; }
         public EventHandler<EventArgs> ForYouButton { get; set; }
         public SingerAbout singerAbout { get; set; }
-        public Panel singerAboutPanel { get => mainPanel; set => mainPanel = value; }
+        public Panel singerAboutPanel { get => serachPanel; set => serachPanel = value; }
         public Music music { get; set; }
-        public Panel MusicPanel { get => mainMusicPanel; set => mainMusicPanel = (Guna.UI2.WinForms.Guna2GradientPanel)value; }
+        public Panel MusicPanel { get => musicPanel; set => musicPanel = (Guna.UI2.WinForms.Guna2GradientPanel)value; }
+        public Panel SingersPanel { get => singersPanel; set => singersPanel = (Guna.UI2.WinForms.Guna2GradientPanel)value; }
 
         private void artistsBtn_Click(object sender, EventArgs e)
         {

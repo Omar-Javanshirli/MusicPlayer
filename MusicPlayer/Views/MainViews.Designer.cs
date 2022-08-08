@@ -38,8 +38,9 @@
             this.playlistBtn = new FontAwesome.Sharp.IconButton();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.mainPanel = new System.Windows.Forms.Panel();
-            this.mainMusicPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.serachPanel = new System.Windows.Forms.Panel();
+            this.musicPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.singersPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2GradientPanel1.SuspendLayout();
             this.guna2GradientPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -235,21 +236,30 @@
             this.guna2HtmlLabel2.TabIndex = 1;
             this.guna2HtmlLabel2.Text = "Library";
             // 
-            // mainPanel
+            // serachPanel
             // 
-            this.mainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.mainPanel.Location = new System.Drawing.Point(208, 0);
-            this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(995, 310);
-            this.mainPanel.TabIndex = 1;
+            this.serachPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(18)))), ((int)(((byte)(38)))));
+            this.serachPanel.Location = new System.Drawing.Point(208, 0);
+            this.serachPanel.Name = "serachPanel";
+            this.serachPanel.Size = new System.Drawing.Size(995, 91);
+            this.serachPanel.TabIndex = 1;
             // 
-            // mainMusicPanel
+            // musicPanel
             // 
-            this.mainMusicPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.mainMusicPanel.Location = new System.Drawing.Point(214, 316);
-            this.mainMusicPanel.Name = "mainMusicPanel";
-            this.mainMusicPanel.Size = new System.Drawing.Size(587, 264);
-            this.mainMusicPanel.TabIndex = 2;
+            this.musicPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(18)))), ((int)(((byte)(38)))));
+            this.musicPanel.Location = new System.Drawing.Point(214, 316);
+            this.musicPanel.Name = "musicPanel";
+            this.musicPanel.Size = new System.Drawing.Size(587, 264);
+            this.musicPanel.TabIndex = 2;
+            // 
+            // singersPanel
+            // 
+            this.singersPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(61)))));
+            this.singersPanel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(24)))), ((int)(((byte)(50)))));
+            this.singersPanel.Location = new System.Drawing.Point(214, 97);
+            this.singersPanel.Name = "singersPanel";
+            this.singersPanel.Size = new System.Drawing.Size(989, 213);
+            this.singersPanel.TabIndex = 3;
             // 
             // Form1
             // 
@@ -257,8 +267,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(18)))), ((int)(((byte)(38)))));
             this.ClientSize = new System.Drawing.Size(1203, 577);
-            this.Controls.Add(this.mainMusicPanel);
-            this.Controls.Add(this.mainPanel);
+            this.Controls.Add(this.singersPanel);
+            this.Controls.Add(this.musicPanel);
+            this.Controls.Add(this.serachPanel);
             this.Controls.Add(this.guna2GradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
@@ -283,8 +294,9 @@
         private FontAwesome.Sharp.IconButton songsBtn;
         private FontAwesome.Sharp.IconButton albumsBtn;
         private FontAwesome.Sharp.IconButton artistsBtn;
-        private System.Windows.Forms.Panel mainPanel;
-        private Guna.UI2.WinForms.Guna2GradientPanel mainMusicPanel;
+        private System.Windows.Forms.Panel serachPanel;
+        private Guna.UI2.WinForms.Guna2GradientPanel musicPanel;
+        private Guna.UI2.WinForms.Guna2GradientPanel singersPanel;
     }
 }
 

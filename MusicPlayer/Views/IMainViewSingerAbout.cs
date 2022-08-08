@@ -9,11 +9,6 @@ namespace MusicPlayer.ViewsSingerPhoto
 {
     public interface IMainViewSingerAbout
     {
-        Image SingerPhoto1 { get; set; }
-        Image SingerPhoto2 { get; set; }
-        Image SingerPhoto3 { get; set; }  
-        Image SingerPhoto4 { get; set; }
         EventHandler<EventArgs> SearchButton { get; set; }
-        string SearchText { get; set; }
     }
 }

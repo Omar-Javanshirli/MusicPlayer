@@ -13,5 +13,6 @@ namespace MusicPlayer.MusicModels
         public string Image { get; set; }
         public string SongName { get; set; }
         public int MusicReyting { get; set; }
+        public string  SingerName { get; set; }
     }
 }
