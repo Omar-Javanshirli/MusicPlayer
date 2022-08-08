@@ -30,23 +30,23 @@
         {
             this.musicPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.musicName = new System.Windows.Forms.Label();
-            this.number = new System.Windows.Forms.Label();
+            this.numberLbl = new System.Windows.Forms.Label();
             this.ıconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.singersPhoto = new Guna.UI2.WinForms.Guna2PictureBox();
             this.SerialNumber = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.songName = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.musicPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ıconPictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.singersPhoto)).BeginInit();
             this.SuspendLayout();
             // 
             // musicPanel
             // 
             this.musicPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(18)))), ((int)(((byte)(38)))));
             this.musicPanel.Controls.Add(this.musicName);
-            this.musicPanel.Controls.Add(this.number);
+            this.musicPanel.Controls.Add(this.numberLbl);
             this.musicPanel.Controls.Add(this.ıconPictureBox1);
-            this.musicPanel.Controls.Add(this.guna2PictureBox1);
+            this.musicPanel.Controls.Add(this.singersPhoto);
             this.musicPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.musicPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(61)))));
             this.musicPanel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(24)))), ((int)(((byte)(50)))));
@@ -68,18 +68,18 @@
             this.musicName.Text = "Somg name";
             this.musicName.UseWaitCursor = true;
             // 
-            // number
+            // numberLbl
             // 
-            this.number.AutoSize = true;
-            this.number.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(61)))));
-            this.number.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.number.ForeColor = System.Drawing.Color.White;
-            this.number.Location = new System.Drawing.Point(54, 7);
-            this.number.Name = "number";
-            this.number.Size = new System.Drawing.Size(13, 17);
-            this.number.TabIndex = 15;
-            this.number.Text = "1";
-            this.number.UseWaitCursor = true;
+            this.numberLbl.AutoSize = true;
+            this.numberLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(61)))));
+            this.numberLbl.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.numberLbl.ForeColor = System.Drawing.Color.White;
+            this.numberLbl.Location = new System.Drawing.Point(54, 7);
+            this.numberLbl.Name = "numberLbl";
+            this.numberLbl.Size = new System.Drawing.Size(13, 17);
+            this.numberLbl.TabIndex = 15;
+            this.numberLbl.Text = "1";
+            this.numberLbl.UseWaitCursor = true;
             // 
             // ıconPictureBox1
             // 
@@ -96,19 +96,20 @@
             this.ıconPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.ıconPictureBox1.TabIndex = 1;
             this.ıconPictureBox1.TabStop = false;
+            this.ıconPictureBox1.Click += new System.EventHandler(this.ıconPictureBox1_Click);
             // 
-            // guna2PictureBox1
+            // singersPhoto
             // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(61)))));
-            this.guna2PictureBox1.BorderRadius = 10;
-            this.guna2PictureBox1.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(28, 23);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 0;
-            this.guna2PictureBox1.TabStop = false;
+            this.singersPhoto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(61)))));
+            this.singersPhoto.BorderRadius = 10;
+            this.singersPhoto.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.singersPhoto.ImageRotate = 0F;
+            this.singersPhoto.Location = new System.Drawing.Point(3, 3);
+            this.singersPhoto.Name = "singersPhoto";
+            this.singersPhoto.Size = new System.Drawing.Size(28, 23);
+            this.singersPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.singersPhoto.TabIndex = 0;
+            this.singersPhoto.TabStop = false;
             // 
             // SerialNumber
             // 
@@ -139,7 +140,7 @@
             this.musicPanel.ResumeLayout(false);
             this.musicPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ıconPictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.singersPhoto)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -148,9 +149,9 @@
         private Guna.UI2.WinForms.Guna2GradientPanel musicPanel;
         private Guna.UI2.WinForms.Guna2HtmlLabel SerialNumber;
         private Guna.UI2.WinForms.Guna2HtmlLabel songName;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2PictureBox singersPhoto;
         private FontAwesome.Sharp.IconPictureBox ıconPictureBox1;
-        private System.Windows.Forms.Label number;
+        private System.Windows.Forms.Label numberLbl;
         private System.Windows.Forms.Label musicName;
     }
 }

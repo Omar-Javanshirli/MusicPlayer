@@ -247,10 +247,9 @@
             // 
             // mainMusicPanel
             // 
-            this.mainMusicPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.mainMusicPanel.Location = new System.Drawing.Point(0, 313);
             this.mainMusicPanel.Name = "mainMusicPanel";
-            this.mainMusicPanel.Size = new System.Drawing.Size(995, 264);
+            this.mainMusicPanel.Size = new System.Drawing.Size(582, 264);
             this.mainMusicPanel.TabIndex = 0;
             // 
             // Form1
