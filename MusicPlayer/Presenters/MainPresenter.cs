@@ -39,13 +39,14 @@ namespace MusicPlayer.Presenters
             singerUc.Location = new Point(65,20);
             _view.SingersPanel.Controls.Add(singerUc);
 
-            SingerNameAndSongNameUc singerNameAndSongNameUc = new SingerNameAndSongNameUc();
-            singerNameAndSongNameUc.Location = new Point(65, 160);
-            _view.SingersPanel.Controls.Add(singerNameAndSongNameUc);
+            //SingerNameAndSongNameUc singerNameAndSongNameUc = new SingerNameAndSongNameUc();
+            //singerNameAndSongNameUc.Location = new Point(68, 160);
+            //_view.SingersPanel.Controls.Add(singerNameAndSongNameUc);
 
             var musics = _db.Musics;
             int y = 10;
             int x = 300;
+            int xx = 70;
             foreach (var m in musics)
             {
                 var music = new Music();
@@ -63,6 +64,15 @@ namespace MusicPlayer.Presenters
                 x += 250;
                 _view.SingersPanel.Controls.Add(singer);
             }
+            //foreach (var item in musics)
+            //{
+            //    var music = new SingerNameAndSongNameUc();
+            //    music.Location = new Point(xx, 170);
+            //    xx += 240;
+            //    music.SingerName = item.SingerName;
+            //    music.SongName = item.SongName;
+            //    _view.SingersPanel.Controls.Add(music);
+            //}
         }
         public void Load()
         {
@@ -99,6 +109,7 @@ namespace MusicPlayer.Presenters
 
             _view.singerAboutPanel.Controls.Clear();
             _view.MusicPanel.Controls.Clear();
+            _view.SingersPanel.Controls.Clear();
             LoadFirstPage();
         }
     }

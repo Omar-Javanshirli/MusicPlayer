@@ -19,5 +19,7 @@ namespace MusicPlayer.Views
         }
 
         public string Image { get => singerPhotoPb.ImageLocation; set => Helper.GetImage(value, singerPhotoPb); }
+
+
     }
 }

@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.singerPhotoPb = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.singerPhotoPb = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2GradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.singerPhotoPb)).BeginInit();
             this.guna2GradientPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.singerPhotoPb)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2GradientPanel1
@@ -45,20 +45,8 @@
             this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(24)))), ((int)(((byte)(50)))));
             this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(161, 139);
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(162, 136);
             this.guna2GradientPanel1.TabIndex = 0;
-            // 
-            // singerPhotoPb
-            // 
-            this.singerPhotoPb.BorderRadius = 10;
-            this.singerPhotoPb.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.singerPhotoPb.ImageRotate = 0F;
-            this.singerPhotoPb.Location = new System.Drawing.Point(0, 0);
-            this.singerPhotoPb.Name = "singerPhotoPb";
-            this.singerPhotoPb.Size = new System.Drawing.Size(159, 134);
-            this.singerPhotoPb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.singerPhotoPb.TabIndex = 14;
-            this.singerPhotoPb.TabStop = false;
             // 
             // guna2GradientPanel2
             // 
@@ -68,16 +56,27 @@
             this.guna2GradientPanel2.Size = new System.Drawing.Size(159, 134);
             this.guna2GradientPanel2.TabIndex = 17;
             // 
+            // singerPhotoPb
+            // 
+            this.singerPhotoPb.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.singerPhotoPb.ImageRotate = 0F;
+            this.singerPhotoPb.Location = new System.Drawing.Point(0, 0);
+            this.singerPhotoPb.Name = "singerPhotoPb";
+            this.singerPhotoPb.Size = new System.Drawing.Size(159, 134);
+            this.singerPhotoPb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.singerPhotoPb.TabIndex = 14;
+            this.singerPhotoPb.TabStop = false;
+            // 
             // SingerUc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.guna2GradientPanel1);
             this.Name = "SingerUc";
-            this.Size = new System.Drawing.Size(161, 139);
+            this.Size = new System.Drawing.Size(162, 136);
             this.guna2GradientPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.singerPhotoPb)).EndInit();
             this.guna2GradientPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.singerPhotoPb)).EndInit();
             this.ResumeLayout(false);
 
         }

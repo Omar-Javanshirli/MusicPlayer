@@ -41,8 +41,11 @@
             this.serachPanel = new System.Windows.Forms.Panel();
             this.musicPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.singersPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.songNameLbl = new System.Windows.Forms.Label();
+            this.singerNameLbl = new System.Windows.Forms.Label();
             this.guna2GradientPanel1.SuspendLayout();
             this.guna2GradientPanel2.SuspendLayout();
+            this.singersPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2GradientPanel1
@@ -254,12 +257,40 @@
             // 
             // singersPanel
             // 
+            this.singersPanel.Controls.Add(this.songNameLbl);
+            this.singersPanel.Controls.Add(this.singerNameLbl);
             this.singersPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(61)))));
             this.singersPanel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(24)))), ((int)(((byte)(50)))));
             this.singersPanel.Location = new System.Drawing.Point(214, 97);
             this.singersPanel.Name = "singersPanel";
             this.singersPanel.Size = new System.Drawing.Size(989, 213);
             this.singersPanel.TabIndex = 3;
+            // 
+            // songNameLbl
+            // 
+            this.songNameLbl.AutoSize = true;
+            this.songNameLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(61)))));
+            this.songNameLbl.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.songNameLbl.ForeColor = System.Drawing.Color.DimGray;
+            this.songNameLbl.Location = new System.Drawing.Point(385, 187);
+            this.songNameLbl.Name = "songNameLbl";
+            this.songNameLbl.Size = new System.Drawing.Size(76, 17);
+            this.songNameLbl.TabIndex = 26;
+            this.songNameLbl.Text = "Music Name";
+            this.songNameLbl.UseWaitCursor = true;
+            // 
+            // singerNameLbl
+            // 
+            this.singerNameLbl.AutoSize = true;
+            this.singerNameLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(61)))));
+            this.singerNameLbl.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.singerNameLbl.ForeColor = System.Drawing.Color.White;
+            this.singerNameLbl.Location = new System.Drawing.Point(379, 170);
+            this.singerNameLbl.Name = "singerNameLbl";
+            this.singerNameLbl.Size = new System.Drawing.Size(80, 17);
+            this.singerNameLbl.TabIndex = 25;
+            this.singerNameLbl.Text = "Singer Name";
+            this.singerNameLbl.UseWaitCursor = true;
             // 
             // Form1
             // 
@@ -278,6 +309,8 @@
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel2.ResumeLayout(false);
             this.guna2GradientPanel2.PerformLayout();
+            this.singersPanel.ResumeLayout(false);
+            this.singersPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -297,6 +330,8 @@
         private System.Windows.Forms.Panel serachPanel;
         private Guna.UI2.WinForms.Guna2GradientPanel musicPanel;
         private Guna.UI2.WinForms.Guna2GradientPanel singersPanel;
+        private System.Windows.Forms.Label songNameLbl;
+        private System.Windows.Forms.Label singerNameLbl;
     }
 }
 
