@@ -40,9 +40,11 @@
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.mainPanel = new System.Windows.Forms.Panel();
             this.mainMusicPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.musicListBox = new System.Windows.Forms.ListBox();
             this.guna2GradientPanel1.SuspendLayout();
             this.guna2GradientPanel2.SuspendLayout();
             this.mainPanel.SuspendLayout();
+            this.mainMusicPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2GradientPanel1
@@ -247,10 +249,22 @@
             // 
             // mainMusicPanel
             // 
+            this.mainMusicPanel.Controls.Add(this.musicListBox);
             this.mainMusicPanel.Location = new System.Drawing.Point(0, 313);
             this.mainMusicPanel.Name = "mainMusicPanel";
             this.mainMusicPanel.Size = new System.Drawing.Size(582, 264);
             this.mainMusicPanel.TabIndex = 0;
+            // 
+            // musicListBox
+            // 
+            this.musicListBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(18)))), ((int)(((byte)(38)))));
+            this.musicListBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.musicListBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.musicListBox.FormattingEnabled = true;
+            this.musicListBox.Location = new System.Drawing.Point(0, 0);
+            this.musicListBox.Name = "musicListBox";
+            this.musicListBox.Size = new System.Drawing.Size(582, 264);
+            this.musicListBox.TabIndex = 0;
             // 
             // Form1
             // 
@@ -268,6 +282,7 @@
             this.guna2GradientPanel2.ResumeLayout(false);
             this.guna2GradientPanel2.PerformLayout();
             this.mainPanel.ResumeLayout(false);
+            this.mainMusicPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -286,6 +301,7 @@
         private FontAwesome.Sharp.IconButton artistsBtn;
         private System.Windows.Forms.Panel mainPanel;
         private Guna.UI2.WinForms.Guna2GradientPanel mainMusicPanel;
+        private System.Windows.Forms.ListBox musicListBox;
     }
 }
 

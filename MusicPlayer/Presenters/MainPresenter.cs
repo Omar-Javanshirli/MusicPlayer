@@ -25,7 +25,7 @@ namespace MusicPlayer.Presenters
             _view.singerAboutPanel.Controls.Add(singerAbout);
             Music music =new Music();
             _view.music=music;
-            _view.MusicPanel.Controls.Add(music);
+            _view.Musics.Controls.Add(music);
         }
     }
 }

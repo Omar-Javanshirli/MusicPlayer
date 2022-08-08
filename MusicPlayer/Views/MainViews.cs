@@ -1,4 +1,5 @@
 ﻿
+using MusicPlayer.MusicModels;
 using MusicPlayer.Views;
 using System;
 using System.Collections.Generic;
@@ -29,6 +30,7 @@ namespace MusicPlayer
         public Panel singerAboutPanel { get => mainPanel; set => mainPanel = value; }
         public Music music { get; set; }
         public Panel MusicPanel { get => mainMusicPanel; set => mainMusicPanel = (Guna.UI2.WinForms.Guna2GradientPanel)value; }
+        public ListBox Musics { get => musicListBox; set => musicListBox=value; }
 
         private void artistsBtn_Click(object sender, EventArgs e)
         {

@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Windows.Forms;
+using MusicPlayer.MusicModels;
 
 namespace MusicPlayer.Views
 {
@@ -20,6 +21,6 @@ namespace MusicPlayer.Views
         SingerAbout singerAbout { get; set; }
         Music music { get; set; }
         System.Windows.Forms.Panel singerAboutPanel { get; set; }
-        System.Windows.Forms.Panel MusicPanel { get; set; }
+        System.Windows.Forms.ListBox Musics { get; set; }
     }
 }

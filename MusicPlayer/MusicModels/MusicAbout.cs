@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MusicPlayer.MusicModels
 {
-    internal class MusicAbout
+    public class MusicAbout
     {
         public int Id { get; set; }
         public Image Image { get; set; }
