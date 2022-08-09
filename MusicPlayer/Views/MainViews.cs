@@ -48,12 +48,6 @@ namespace MusicPlayer
         public Music music { get; set; }
         public Panel MusicPanel { get => musicPanel; set => musicPanel = (Guna.UI2.WinForms.Guna2GradientPanel)value; }
         public Panel SingersPanel { get => singersPanel; set => singersPanel = (Guna.UI2.WinForms.Guna2GradientPanel)value; }
-        public string SongNameLbl { get => songNameLbl.Text; set => songNameLbl.Text=value; }
-        public string SingerNameLbl { get => singerNameLbl.Text; set => singerNameLbl.Text=value; }
-        public string SongNameLbl2 { get => songName2Lbl.Text; set => songName2Lbl.Text=value; }
-        public string SingerNameLbl2 { get => singerName2Lbl.Text; set => singerName2Lbl.Text=value; }
-        public string SingerNameLbl3 { get => SingerName3Lbl.Text; set => SingerName3Lbl.Text=value; }
-        public string SongNameLbl3 { get => songName3Lbl.Text; set => songName3Lbl.Text=value; }
 
         private void artistsBtn_Click(object sender, EventArgs e)
         {

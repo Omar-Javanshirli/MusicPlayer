@@ -57,22 +57,6 @@ namespace MusicPlayer.Presenters
                 singer.Image = item.Image;
                 x += 250;
                 _view.SingersPanel.Controls.Add(singer);
-                if (count==0)
-                {
-                    _view.SingerNameLbl=item.SingerName.ToString();
-                    _view.SongNameLbl=item.SongName.ToString();
-                }
-                else if (count==1)
-                {
-                    _view.SingerNameLbl2 = item.SingerName.ToString();
-                    _view.SongNameLbl2=item .SongName.ToString();  
-                }
-                else
-                {
-                    _view.SingerNameLbl3 = item.SingerName.ToString();
-                    _view.SongNameLbl3=item .SongName.ToString();
-                }
-                count++;
             }
         }
         public void Load()
