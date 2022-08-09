@@ -49,7 +49,6 @@ namespace MusicPlayer.Presenters
                 music.SongNameLbl = m.SongName.ToString();
                 _view.MusicPanel.Controls.Add(music);
             }
-            int count = 0;
             foreach (var item in musics)
             {
                 var singer = new SingerUc();
@@ -63,7 +62,7 @@ namespace MusicPlayer.Presenters
         {
             MusicAbout musicAbout = new MusicAbout()
             {
-                Image = @"https://cdn-icons-png.flaticon.com/512/3844/3844724.png",
+                Image = @"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgG721Q8E9Y26ROWHRmPDULCIRvNe8968EsA&usqp=CAU",
                 MusicReyting = 12,
                 SongName = "Love Song",
                 SingerName="Zak Abel"
@@ -72,7 +71,7 @@ namespace MusicPlayer.Presenters
 
             musicAbout = new MusicAbout()
             {
-                Image = @"https://cdn-icons-png.flaticon.com/512/3844/3844724.png",
+                Image = @"https://media.npr.org/assets/img/2022/05/19/gettyimages-1134174738-76db822abafc0459deb7f2ee9aa517da4bc33254-s1100-c50.jpg",
                 MusicReyting = 9,
                 SongName = "Kombucha Burps",
                 SingerName="Kendrik lamar"
@@ -81,7 +80,7 @@ namespace MusicPlayer.Presenters
 
             musicAbout = new MusicAbout()
             {
-                Image = @"https://cdn-icons-png.flaticon.com/512/3844/3844724.png",
+                Image = @"https://static.dw.com/image/60290826_101.jpg",
                 MusicReyting = 12,
                 SongName = "Mask Off Soul Flip",
                 SingerName = "Esta"
