@@ -13,6 +13,7 @@ namespace MusicPlayer.MusicView
         string Image { get; set; }
         string IdLbl { get; set; }
         string SongNameLbl { get; set; }
+
         EventHandler<EventArgs> ForYouButtonClik { get; set; }
     }
 }

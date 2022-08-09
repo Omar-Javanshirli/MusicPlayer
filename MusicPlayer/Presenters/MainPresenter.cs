@@ -35,17 +35,9 @@ namespace MusicPlayer.Presenters
             singerAbout.Dock = System.Windows.Forms.DockStyle.Fill;
             _view.singerAboutPanel.Controls.Add(singerAbout);
 
-            SingerUc singerUc = new SingerUc();
-            singerUc.Location = new Point(65,20);
-            _view.SingersPanel.Controls.Add(singerUc);
-
-            //SingerNameAndSongNameUc singerNameAndSongNameUc = new SingerNameAndSongNameUc();
-            //singerNameAndSongNameUc.Location = new Point(68, 160);
-            //_view.SingersPanel.Controls.Add(singerNameAndSongNameUc);
-
             var musics = _db.Musics;
             int y = 10;
-            int x = 300;
+            int x = 130;
             int xx = 70;
             foreach (var m in musics)
             {
@@ -57,22 +49,31 @@ namespace MusicPlayer.Presenters
                 music.SongNameLbl = m.SongName.ToString();
                 _view.MusicPanel.Controls.Add(music);
             }
+            int count = 0;
             foreach (var item in musics)
             {
                 var singer = new SingerUc();
                 singer.Location= new Point(x,23);
+                singer.Image = item.Image;
                 x += 250;
                 _view.SingersPanel.Controls.Add(singer);
+                if (count==0)
+                {
+                    _view.SingerNameLbl=item.SingerName.ToString();
+                    _view.SongNameLbl=item.SongName.ToString();
+                }
+                else if (count==1)
+                {
+                    _view.SingerNameLbl2 = item.SingerName.ToString();
+                    _view.SongNameLbl2=item .SongName.ToString();  
+                }
+                else
+                {
+                    _view.SingerNameLbl3 = item.SingerName.ToString();
+                    _view.SongNameLbl3=item .SongName.ToString();
+                }
+                count++;
             }
-            //foreach (var item in musics)
-            //{
-            //    var music = new SingerNameAndSongNameUc();
-            //    music.Location = new Point(xx, 170);
-            //    xx += 240;
-            //    music.SingerName = item.SingerName;
-            //    music.SongName = item.SongName;
-            //    _view.SingersPanel.Controls.Add(music);
-            //}
         }
         public void Load()
         {

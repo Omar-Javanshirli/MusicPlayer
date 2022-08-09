@@ -23,5 +23,12 @@ namespace MusicPlayer.Views
         System.Windows.Forms.Panel singerAboutPanel { get; set; }
         System.Windows.Forms.Panel MusicPanel { get; set; }
         System.Windows.Forms.Panel SingersPanel { get; set; }
+        string SongNameLbl { get; set; }
+        string SingerNameLbl { get; set; }
+        string SongNameLbl2 { get; set; }
+        string SingerNameLbl2 { get; set; }
+        string SingerNameLbl3 { get; set; }
+        string SongNameLbl3 { get; set; }
+
     }
 }

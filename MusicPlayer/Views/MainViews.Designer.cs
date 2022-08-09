@@ -41,6 +41,10 @@
             this.serachPanel = new System.Windows.Forms.Panel();
             this.musicPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.singersPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.songName3Lbl = new System.Windows.Forms.Label();
+            this.SingerName3Lbl = new System.Windows.Forms.Label();
+            this.songName2Lbl = new System.Windows.Forms.Label();
+            this.singerName2Lbl = new System.Windows.Forms.Label();
             this.songNameLbl = new System.Windows.Forms.Label();
             this.singerNameLbl = new System.Windows.Forms.Label();
             this.guna2GradientPanel1.SuspendLayout();
@@ -257,6 +261,10 @@
             // 
             // singersPanel
             // 
+            this.singersPanel.Controls.Add(this.songName3Lbl);
+            this.singersPanel.Controls.Add(this.SingerName3Lbl);
+            this.singersPanel.Controls.Add(this.songName2Lbl);
+            this.singersPanel.Controls.Add(this.singerName2Lbl);
             this.singersPanel.Controls.Add(this.songNameLbl);
             this.singersPanel.Controls.Add(this.singerNameLbl);
             this.singersPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(61)))));
@@ -266,13 +274,65 @@
             this.singersPanel.Size = new System.Drawing.Size(989, 213);
             this.singersPanel.TabIndex = 3;
             // 
+            // songName3Lbl
+            // 
+            this.songName3Lbl.AutoSize = true;
+            this.songName3Lbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(61)))));
+            this.songName3Lbl.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.songName3Lbl.ForeColor = System.Drawing.Color.DimGray;
+            this.songName3Lbl.Location = new System.Drawing.Point(630, 183);
+            this.songName3Lbl.Name = "songName3Lbl";
+            this.songName3Lbl.Size = new System.Drawing.Size(76, 17);
+            this.songName3Lbl.TabIndex = 30;
+            this.songName3Lbl.Text = "Music Name";
+            this.songName3Lbl.UseWaitCursor = true;
+            // 
+            // SingerName3Lbl
+            // 
+            this.SingerName3Lbl.AutoSize = true;
+            this.SingerName3Lbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(61)))));
+            this.SingerName3Lbl.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SingerName3Lbl.ForeColor = System.Drawing.Color.White;
+            this.SingerName3Lbl.Location = new System.Drawing.Point(630, 165);
+            this.SingerName3Lbl.Name = "SingerName3Lbl";
+            this.SingerName3Lbl.Size = new System.Drawing.Size(80, 17);
+            this.SingerName3Lbl.TabIndex = 29;
+            this.SingerName3Lbl.Text = "Singer Name";
+            this.SingerName3Lbl.UseWaitCursor = true;
+            // 
+            // songName2Lbl
+            // 
+            this.songName2Lbl.AutoSize = true;
+            this.songName2Lbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(61)))));
+            this.songName2Lbl.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.songName2Lbl.ForeColor = System.Drawing.Color.DimGray;
+            this.songName2Lbl.Location = new System.Drawing.Point(387, 183);
+            this.songName2Lbl.Name = "songName2Lbl";
+            this.songName2Lbl.Size = new System.Drawing.Size(76, 17);
+            this.songName2Lbl.TabIndex = 28;
+            this.songName2Lbl.Text = "Music Name";
+            this.songName2Lbl.UseWaitCursor = true;
+            // 
+            // singerName2Lbl
+            // 
+            this.singerName2Lbl.AutoSize = true;
+            this.singerName2Lbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(61)))));
+            this.singerName2Lbl.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.singerName2Lbl.ForeColor = System.Drawing.Color.White;
+            this.singerName2Lbl.Location = new System.Drawing.Point(387, 165);
+            this.singerName2Lbl.Name = "singerName2Lbl";
+            this.singerName2Lbl.Size = new System.Drawing.Size(80, 17);
+            this.singerName2Lbl.TabIndex = 27;
+            this.singerName2Lbl.Text = "Singer Name";
+            this.singerName2Lbl.UseWaitCursor = true;
+            // 
             // songNameLbl
             // 
             this.songNameLbl.AutoSize = true;
             this.songNameLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(61)))));
             this.songNameLbl.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.songNameLbl.ForeColor = System.Drawing.Color.DimGray;
-            this.songNameLbl.Location = new System.Drawing.Point(385, 187);
+            this.songNameLbl.Location = new System.Drawing.Point(131, 182);
             this.songNameLbl.Name = "songNameLbl";
             this.songNameLbl.Size = new System.Drawing.Size(76, 17);
             this.songNameLbl.TabIndex = 26;
@@ -285,7 +345,7 @@
             this.singerNameLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(61)))));
             this.singerNameLbl.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.singerNameLbl.ForeColor = System.Drawing.Color.White;
-            this.singerNameLbl.Location = new System.Drawing.Point(379, 170);
+            this.singerNameLbl.Location = new System.Drawing.Point(131, 165);
             this.singerNameLbl.Name = "singerNameLbl";
             this.singerNameLbl.Size = new System.Drawing.Size(80, 17);
             this.singerNameLbl.TabIndex = 25;
@@ -332,6 +392,10 @@
         private Guna.UI2.WinForms.Guna2GradientPanel singersPanel;
         private System.Windows.Forms.Label songNameLbl;
         private System.Windows.Forms.Label singerNameLbl;
+        private System.Windows.Forms.Label songName3Lbl;
+        private System.Windows.Forms.Label SingerName3Lbl;
+        private System.Windows.Forms.Label songName2Lbl;
+        private System.Windows.Forms.Label singerName2Lbl;
     }
 }
 
