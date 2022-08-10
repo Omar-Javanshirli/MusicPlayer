@@ -14,6 +14,15 @@ namespace MusicPlayer.PresentersSingerAbout
         public MainPresenterSingerAbout(IMainViewSingerAbout view)
         {
             _view = view;
+            _view.MouseEnterEvent += ViewMouseEnter;
+        }
+
+        public void ViewMouseEnter(object sender, EventArgs e)
+        {
+            if (_view.Searchtext.Text=="Search music")
+            {
+                _view.Searchtext.Text =string .Empty;    
+            }
         }
     }
 }
