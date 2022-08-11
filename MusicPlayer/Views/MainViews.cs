@@ -48,7 +48,6 @@ namespace MusicPlayer
         public Music music { get; set; }
         public Panel MusicPanel { get => musicPanel; set => musicPanel = (Guna.UI2.WinForms.Guna2GradientPanel)value; }
         public Panel SingersPanel { get => singersPanel; set => singersPanel = (Guna.UI2.WinForms.Guna2GradientPanel)value; }
-
         private void artistsBtn_Click(object sender, EventArgs e)
         {
             ArtistButton.Invoke(sender, e);

@@ -18,7 +18,8 @@ namespace MusicPlayer.Presenters
         {
             _view = view;
 
-            view.PlaylistButton += ViewPlaylistButton;
+            _view.PlaylistButton += ViewPlaylistButton;
+            _view.ArtistButton += ViewArtistButton;
             _db = new SongContext();
             var count = _db.Musics.Count();
             if (count == 0)
@@ -95,6 +96,13 @@ namespace MusicPlayer.Presenters
             _view.MusicPanel.Controls.Clear();
             _view.SingersPanel.Controls.Clear();
             LoadFirstPage();
+        }
+        public void ViewArtistButton(object sender,EventArgs e)
+        {
+            ArtistView artistView = new ArtistView();
+            artistView.StartPosition=System.Windows.Forms.FormStartPosition.CenterScreen;
+            var artistPresnter = new ArtistPresenter(artistView);
+            artistView.ShowDialog();
         }
     }
 }

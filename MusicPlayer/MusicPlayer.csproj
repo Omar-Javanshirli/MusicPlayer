@@ -240,7 +240,9 @@
     <Compile Include="Models\Helper.cs" />
     <Compile Include="Data\SongContext.cs" />
     <Compile Include="Models\MusicAbout.cs" />
+    <Compile Include="Presenters\ArtistPresenter.cs" />
     <Compile Include="Presenters\MusicPresenter.cs" />
+    <Compile Include="Views\IArtistView.cs" />
     <Compile Include="Views\ArtistView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -248,6 +250,7 @@
       <DependentUpon>ArtistView.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\IMainMusicView.cs" />
+    <Compile Include="Views\IPhotoAndAlbumName.cs" />
     <Compile Include="Views\ISingerView.cs" />
     <Compile Include="Views\Music.cs">
       <SubType>UserControl</SubType>
@@ -267,11 +270,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\PhotoUc.cs">
+    <Compile Include="Views\PhotoAndAlbumNameUc.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\PhotoUc.Designer.cs">
-      <DependentUpon>PhotoUc.cs</DependentUpon>
+    <Compile Include="Views\PhotoAndAlbumNameUc.Designer.cs">
+      <DependentUpon>PhotoAndAlbumNameUc.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\SingerUc.cs">
       <SubType>UserControl</SubType>
@@ -304,8 +307,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Views\PhotoUc.resx">
-      <DependentUpon>PhotoUc.cs</DependentUpon>
+    <EmbeddedResource Include="Views\PhotoAndAlbumNameUc.resx">
+      <DependentUpon>PhotoAndAlbumNameUc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\SingerUc.resx">
       <DependentUpon>SingerUc.cs</DependentUpon>
@@ -395,6 +398,48 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\only-girl-in-the-world-album-cover-sticker__367941.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-right-button-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-prev-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lp2.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lp3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lp4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\madonna.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2pac.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2pac2.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2pac3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2pac4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beyonce.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beyonce2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beyonce3.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

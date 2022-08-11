@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.animationPanel = new System.Windows.Forms.Panel();
-            this.artistPicturePanel = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.forYouBtn = new FontAwesome.Sharp.IconButton();
             this.storeBtn = new FontAwesome.Sharp.IconButton();
+            this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.songsBtn = new FontAwesome.Sharp.IconButton();
             this.albumsBtn = new FontAwesome.Sharp.IconButton();
             this.artistsBtn = new FontAwesome.Sharp.IconButton();
             this.playlistBtn = new FontAwesome.Sharp.IconButton();
+            this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.artistPicturePanel = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.musicPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.recomendAlbumsPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.animationPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2GradientPanel1.SuspendLayout();
             this.guna2GradientPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -61,51 +61,6 @@
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.Size = new System.Drawing.Size(200, 538);
             this.guna2GradientPanel1.TabIndex = 0;
-            // 
-            // guna2GradientPanel3
-            // 
-            this.guna2GradientPanel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2GradientPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(61)))));
-            this.guna2GradientPanel3.Location = new System.Drawing.Point(0, 310);
-            this.guna2GradientPanel3.Name = "guna2GradientPanel3";
-            this.guna2GradientPanel3.Size = new System.Drawing.Size(200, 100);
-            this.guna2GradientPanel3.TabIndex = 10;
-            // 
-            // guna2GradientPanel2
-            // 
-            this.guna2GradientPanel2.Controls.Add(this.guna2HtmlLabel2);
-            this.guna2GradientPanel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2GradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(61)))));
-            this.guna2GradientPanel2.Location = new System.Drawing.Point(0, 0);
-            this.guna2GradientPanel2.Name = "guna2GradientPanel2";
-            this.guna2GradientPanel2.Size = new System.Drawing.Size(200, 144);
-            this.guna2GradientPanel2.TabIndex = 2;
-            // 
-            // guna2HtmlLabel2
-            // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.guna2HtmlLabel2.ForeColor = System.Drawing.SystemColors.Control;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(60, 22);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(75, 31);
-            this.guna2HtmlLabel2.TabIndex = 1;
-            this.guna2HtmlLabel2.Text = "Library";
-            // 
-            // animationPanel
-            // 
-            this.animationPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(18)))), ((int)(((byte)(38)))));
-            this.animationPanel.Location = new System.Drawing.Point(206, 0);
-            this.animationPanel.Name = "animationPanel";
-            this.animationPanel.Size = new System.Drawing.Size(551, 144);
-            this.animationPanel.TabIndex = 2;
-            // 
-            // artistPicturePanel
-            // 
-            this.artistPicturePanel.Location = new System.Drawing.Point(206, 150);
-            this.artistPicturePanel.Name = "artistPicturePanel";
-            this.artistPicturePanel.Size = new System.Drawing.Size(551, 154);
-            this.artistPicturePanel.TabIndex = 3;
             // 
             // forYouBtn
             // 
@@ -152,6 +107,15 @@
             this.storeBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.storeBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.storeBtn.UseVisualStyleBackColor = false;
+            // 
+            // guna2GradientPanel3
+            // 
+            this.guna2GradientPanel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2GradientPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(61)))));
+            this.guna2GradientPanel3.Location = new System.Drawing.Point(0, 310);
+            this.guna2GradientPanel3.Name = "guna2GradientPanel3";
+            this.guna2GradientPanel3.Size = new System.Drawing.Size(200, 100);
+            this.guna2GradientPanel3.TabIndex = 10;
             // 
             // songsBtn
             // 
@@ -245,6 +209,34 @@
             this.playlistBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.playlistBtn.UseVisualStyleBackColor = false;
             // 
+            // guna2GradientPanel2
+            // 
+            this.guna2GradientPanel2.Controls.Add(this.guna2HtmlLabel2);
+            this.guna2GradientPanel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2GradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(61)))));
+            this.guna2GradientPanel2.Location = new System.Drawing.Point(0, 0);
+            this.guna2GradientPanel2.Name = "guna2GradientPanel2";
+            this.guna2GradientPanel2.Size = new System.Drawing.Size(200, 144);
+            this.guna2GradientPanel2.TabIndex = 2;
+            // 
+            // guna2HtmlLabel2
+            // 
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.guna2HtmlLabel2.ForeColor = System.Drawing.SystemColors.Control;
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(60, 22);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(75, 31);
+            this.guna2HtmlLabel2.TabIndex = 1;
+            this.guna2HtmlLabel2.Text = "Library";
+            // 
+            // artistPicturePanel
+            // 
+            this.artistPicturePanel.Location = new System.Drawing.Point(206, 150);
+            this.artistPicturePanel.Name = "artistPicturePanel";
+            this.artistPicturePanel.Size = new System.Drawing.Size(551, 154);
+            this.artistPicturePanel.TabIndex = 3;
+            // 
             // musicPanel
             // 
             this.musicPanel.Location = new System.Drawing.Point(950, 0);
@@ -259,16 +251,23 @@
             this.recomendAlbumsPanel.Size = new System.Drawing.Size(969, 137);
             this.recomendAlbumsPanel.TabIndex = 5;
             // 
+            // animationPanel
+            // 
+            this.animationPanel.Location = new System.Drawing.Point(206, 0);
+            this.animationPanel.Name = "animationPanel";
+            this.animationPanel.Size = new System.Drawing.Size(551, 144);
+            this.animationPanel.TabIndex = 6;
+            // 
             // ArtistView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(18)))), ((int)(((byte)(38)))));
             this.ClientSize = new System.Drawing.Size(1187, 538);
+            this.Controls.Add(this.animationPanel);
             this.Controls.Add(this.recomendAlbumsPanel);
             this.Controls.Add(this.musicPanel);
             this.Controls.Add(this.artistPicturePanel);
-            this.Controls.Add(this.animationPanel);
             this.Controls.Add(this.guna2GradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ArtistView";
@@ -292,9 +291,9 @@
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel3;
         private FontAwesome.Sharp.IconButton forYouBtn;
         private FontAwesome.Sharp.IconButton storeBtn;
-        private System.Windows.Forms.Panel animationPanel;
         private Guna.UI2.WinForms.Guna2GradientPanel artistPicturePanel;
         private Guna.UI2.WinForms.Guna2GradientPanel musicPanel;
         private Guna.UI2.WinForms.Guna2GradientPanel recomendAlbumsPanel;
+        private Guna.UI2.WinForms.Guna2GradientPanel animationPanel;
     }
 }
