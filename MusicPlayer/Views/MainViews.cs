@@ -22,19 +22,6 @@ namespace MusicPlayer
         public Form1()
         {
             InitializeComponent();
-
-            //SoundPlayer soundPlayer = null;
-            //using (WebClient webClient = new WebClient())
-            //{
-            //    byte[] data = webClient.DownloadData(@"https://soundcloud.com/user-616200117/monamie?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing");
-
-            //    using (MemoryStream mem = new MemoryStream())
-            //    {
-            //        mem.Write(data, 0, data.Length);
-            //        soundPlayer=new SoundPlayer(mem);
-            //    }
-            //}
-            //soundPlayer.Play();
         }
 
         public EventHandler<EventArgs> PlaylistButton { get; set; }
@@ -44,7 +31,7 @@ namespace MusicPlayer
         public EventHandler<EventArgs> StoreButton { get; set; }
         public EventHandler<EventArgs> ForYouButton { get; set; }
         public SingerAbout singerAbout { get; set; }
-        public Panel singerAboutPanel { get => serachPanel; set => serachPanel = value; }
+        public Panel SearchPanel { get => searchPanel; set => searchPanel = value; }
         public Music music { get; set; }
         public Panel MusicPanel { get => musicPanel; set => musicPanel = (Guna.UI2.WinForms.Guna2GradientPanel)value; }
         public Panel SingersPanel { get => singersPanel; set => singersPanel = (Guna.UI2.WinForms.Guna2GradientPanel)value; }
@@ -77,7 +64,5 @@ namespace MusicPlayer
         {
             PlaylistButton.Invoke(sender, e);
         }
-
-
     }
 }

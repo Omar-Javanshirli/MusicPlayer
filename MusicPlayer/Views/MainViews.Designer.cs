@@ -38,7 +38,7 @@
             this.playlistBtn = new FontAwesome.Sharp.IconButton();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.serachPanel = new System.Windows.Forms.Panel();
+            this.searchPanel = new System.Windows.Forms.Panel();
             this.musicPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.singersPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2GradientPanel1.SuspendLayout();
@@ -236,13 +236,13 @@
             this.guna2HtmlLabel2.TabIndex = 1;
             this.guna2HtmlLabel2.Text = "Library";
             // 
-            // serachPanel
+            // searchPanel
             // 
-            this.serachPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(18)))), ((int)(((byte)(38)))));
-            this.serachPanel.Location = new System.Drawing.Point(208, 0);
-            this.serachPanel.Name = "serachPanel";
-            this.serachPanel.Size = new System.Drawing.Size(995, 91);
-            this.serachPanel.TabIndex = 1;
+            this.searchPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(18)))), ((int)(((byte)(38)))));
+            this.searchPanel.Location = new System.Drawing.Point(208, 0);
+            this.searchPanel.Name = "searchPanel";
+            this.searchPanel.Size = new System.Drawing.Size(995, 91);
+            this.searchPanel.TabIndex = 1;
             // 
             // musicPanel
             // 
@@ -269,7 +269,7 @@
             this.ClientSize = new System.Drawing.Size(1203, 577);
             this.Controls.Add(this.singersPanel);
             this.Controls.Add(this.musicPanel);
-            this.Controls.Add(this.serachPanel);
+            this.Controls.Add(this.searchPanel);
             this.Controls.Add(this.guna2GradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
@@ -294,7 +294,7 @@
         private FontAwesome.Sharp.IconButton songsBtn;
         private FontAwesome.Sharp.IconButton albumsBtn;
         private FontAwesome.Sharp.IconButton artistsBtn;
-        private System.Windows.Forms.Panel serachPanel;
+        private System.Windows.Forms.Panel searchPanel;
         private Guna.UI2.WinForms.Guna2GradientPanel musicPanel;
         private Guna.UI2.WinForms.Guna2GradientPanel singersPanel;
     }

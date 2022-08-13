@@ -34,7 +34,7 @@ namespace MusicPlayer.Presenters
             SingerAbout singerAbout = new SingerAbout();
             _view.singerAbout = singerAbout;
             singerAbout.Dock = System.Windows.Forms.DockStyle.Fill;
-            _view.singerAboutPanel.Controls.Add(singerAbout);
+            _view.SearchPanel.Controls.Add(singerAbout);
 
             var musics = _db.Musics;
             int y = 10;
@@ -91,8 +91,7 @@ namespace MusicPlayer.Presenters
         }
         public void ViewPlaylistButton(object sender, EventArgs e)
         {
-
-            _view.singerAboutPanel.Controls.Clear();
+            _view.SearchPanel.Controls.Clear();
             _view.MusicPanel.Controls.Clear();
             _view.SingersPanel.Controls.Clear();
             LoadFirstPage();
@@ -100,10 +99,9 @@ namespace MusicPlayer.Presenters
         public void ViewArtistButton(object sender,EventArgs e)
         {
             ArtistView artistView = new ArtistView();
-            artistView.StartPosition=System.Windows.Forms.FormStartPosition.CenterScreen;
+            artistView.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             var artistPresnter = new ArtistPresenter(artistView);
             artistView.ShowDialog();
         }
     }
 }
-

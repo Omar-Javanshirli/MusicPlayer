@@ -20,8 +20,9 @@ namespace MusicPlayer.Views
         EventHandler<EventArgs> ForYouButton { get; set; }
         SingerAbout singerAbout { get; set; }
         Music music { get; set; }
-        System.Windows.Forms.Panel singerAboutPanel { get; set; }
+        System.Windows.Forms.Panel SearchPanel { get; set; }
         System.Windows.Forms.Panel MusicPanel { get; set; }
         System.Windows.Forms.Panel SingersPanel { get; set; }
+
     }
 }
