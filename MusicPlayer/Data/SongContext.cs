@@ -10,7 +10,7 @@ namespace MusicPlayer.MusicDataBase
 {
     internal class SongContext:DbContext
     {
-        public SongContext():base("MusicsDb")
+        public SongContext():base("MusicsDbb")
         {
 
         }

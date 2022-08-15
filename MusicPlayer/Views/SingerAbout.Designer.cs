@@ -31,10 +31,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.searchButton = new FontAwesome.Sharp.IconButton();
             this.label1 = new System.Windows.Forms.Label();
             this.searchTb = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.searchButton = new FontAwesome.Sharp.IconButton();
             this.guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
             this.guna2GradientPanel1.SuspendLayout();
             this.guna2GradientPanel2.SuspendLayout();
@@ -45,9 +45,10 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(61)))));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(52, 10);
+            this.label3.Location = new System.Drawing.Point(78, 15);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(13, 13);
+            this.label3.Size = new System.Drawing.Size(18, 20);
             this.label3.TabIndex = 1;
             this.label3.Text = ">";
             // 
@@ -56,9 +57,10 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(61)))));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(33, 10);
+            this.label2.Location = new System.Drawing.Point(50, 15);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(13, 13);
+            this.label2.Size = new System.Drawing.Size(18, 20);
             this.label2.TabIndex = 0;
             this.label2.Text = "<";
             // 
@@ -74,9 +76,29 @@
             this.guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(61)))));
             this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(24)))), ((int)(((byte)(50)))));
             this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2GradientPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(884, 67);
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(1326, 103);
             this.guna2GradientPanel1.TabIndex = 9;
+            // 
+            // searchButton
+            // 
+            this.searchButton.BackColor = System.Drawing.Color.Transparent;
+            this.searchButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(61)))));
+            this.searchButton.FlatAppearance.BorderSize = 0;
+            this.searchButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.searchButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(61)))));
+            this.searchButton.IconChar = FontAwesome.Sharp.IconChar.Search;
+            this.searchButton.IconColor = System.Drawing.Color.White;
+            this.searchButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.searchButton.IconSize = 20;
+            this.searchButton.Location = new System.Drawing.Point(3, 0);
+            this.searchButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.searchButton.Name = "searchButton";
+            this.searchButton.Size = new System.Drawing.Size(39, 35);
+            this.searchButton.TabIndex = 25;
+            this.searchButton.UseVisualStyleBackColor = false;
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 
             // label1
             // 
@@ -84,17 +106,19 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(61)))));
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(41, 33);
+            this.label1.Location = new System.Drawing.Point(62, 51);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 27);
+            this.label1.Size = new System.Drawing.Size(190, 41);
             this.label1.TabIndex = 12;
             this.label1.Text = "Explore New";
             // 
             // searchTb
             // 
             this.searchTb.AutoRoundedCorners = true;
+            this.searchTb.BackColor = System.Drawing.Color.Transparent;
             this.searchTb.BorderColor = System.Drawing.Color.White;
-            this.searchTb.BorderRadius = 10;
+            this.searchTb.BorderRadius = 16;
             this.searchTb.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.searchTb.DefaultText = "Search music";
             this.searchTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -105,47 +129,32 @@
             this.searchTb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.searchTb.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.searchTb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.searchTb.Location = new System.Drawing.Point(137, 6);
-            this.searchTb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.searchTb.Location = new System.Drawing.Point(233, 10);
+            this.searchTb.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.searchTb.Name = "searchTb";
             this.searchTb.PasswordChar = '\0';
             this.searchTb.PlaceholderForeColor = System.Drawing.Color.White;
             this.searchTb.PlaceholderText = "";
             this.searchTb.SelectedText = "";
             this.searchTb.SelectionStart = 12;
-            this.searchTb.Size = new System.Drawing.Size(229, 23);
+            this.searchTb.Size = new System.Drawing.Size(344, 35);
             this.searchTb.TabIndex = 11;
             this.searchTb.MouseEnter += new System.EventHandler(this.searchTb_MouseEnter);
             // 
             // guna2GradientPanel2
             // 
+            this.guna2GradientPanel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2GradientPanel2.Controls.Add(this.searchButton);
             this.guna2GradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(61)))));
-            this.guna2GradientPanel2.Location = new System.Drawing.Point(91, 4);
+            this.guna2GradientPanel2.Location = new System.Drawing.Point(136, 6);
+            this.guna2GradientPanel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2GradientPanel2.Name = "guna2GradientPanel2";
-            this.guna2GradientPanel2.Size = new System.Drawing.Size(28, 23);
+            this.guna2GradientPanel2.Size = new System.Drawing.Size(42, 35);
             this.guna2GradientPanel2.TabIndex = 10;
-            // 
-            // searchButton
-            // 
-            this.searchButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(61)))));
-            this.searchButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(61)))));
-            this.searchButton.FlatAppearance.BorderSize = 0;
-            this.searchButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.searchButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(40)))), ((int)(((byte)(61)))));
-            this.searchButton.IconChar = FontAwesome.Sharp.IconChar.Search;
-            this.searchButton.IconColor = System.Drawing.Color.White;
-            this.searchButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.searchButton.IconSize = 20;
-            this.searchButton.Location = new System.Drawing.Point(2, 2);
-            this.searchButton.Name = "searchButton";
-            this.searchButton.Size = new System.Drawing.Size(26, 23);
-            this.searchButton.TabIndex = 25;
-            this.searchButton.UseVisualStyleBackColor = false;
-            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
             // 
             // guna2ContextMenuStrip1
             // 
+            this.guna2ContextMenuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.guna2ContextMenuStrip1.Name = "guna2ContextMenuStrip1";
             this.guna2ContextMenuStrip1.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.guna2ContextMenuStrip1.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
@@ -160,12 +169,13 @@
             // 
             // SingerAbout
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(18)))), ((int)(((byte)(38)))));
             this.Controls.Add(this.guna2GradientPanel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "SingerAbout";
-            this.Size = new System.Drawing.Size(884, 70);
+            this.Size = new System.Drawing.Size(1326, 108);
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
             this.guna2GradientPanel2.ResumeLayout(false);
