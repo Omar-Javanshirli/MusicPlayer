@@ -54,8 +54,9 @@
             this.guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(90)))), ((int)(((byte)(132)))));
             this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(24)))), ((int)(((byte)(50)))));
             this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2GradientPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(551, 154);
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(826, 237);
             this.guna2GradientPanel1.TabIndex = 0;
             // 
             // prevBtn
@@ -70,9 +71,10 @@
             this.prevBtn.ForeColor = System.Drawing.Color.White;
             this.prevBtn.Image = global::MusicPlayer.Properties.Resources.icons8_prev_80;
             this.prevBtn.ImageSize = new System.Drawing.Size(60, 60);
-            this.prevBtn.Location = new System.Drawing.Point(0, 59);
+            this.prevBtn.Location = new System.Drawing.Point(0, 91);
+            this.prevBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.prevBtn.Name = "prevBtn";
-            this.prevBtn.Size = new System.Drawing.Size(33, 45);
+            this.prevBtn.Size = new System.Drawing.Size(50, 49);
             this.prevBtn.TabIndex = 5;
             this.prevBtn.Click += new System.EventHandler(this.prevBtn_Click);
             // 
@@ -85,12 +87,13 @@
             this.nextBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.nextBtn.FillColor = System.Drawing.Color.Transparent;
             this.nextBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.nextBtn.ForeColor = System.Drawing.Color.White;
+            this.nextBtn.ForeColor = System.Drawing.Color.Transparent;
             this.nextBtn.Image = global::MusicPlayer.Properties.Resources.icons8_right_button_80;
             this.nextBtn.ImageSize = new System.Drawing.Size(60, 60);
-            this.nextBtn.Location = new System.Drawing.Point(518, 59);
+            this.nextBtn.Location = new System.Drawing.Point(772, 91);
+            this.nextBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.nextBtn.Name = "nextBtn";
-            this.nextBtn.Size = new System.Drawing.Size(33, 45);
+            this.nextBtn.Size = new System.Drawing.Size(50, 53);
             this.nextBtn.TabIndex = 4;
             this.nextBtn.Click += new System.EventHandler(this.nextBtn_Click);
             // 
@@ -99,9 +102,10 @@
             this.albumNameLbl.BackColor = System.Drawing.Color.Transparent;
             this.albumNameLbl.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.albumNameLbl.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.albumNameLbl.Location = new System.Drawing.Point(79, 84);
+            this.albumNameLbl.Location = new System.Drawing.Point(118, 129);
+            this.albumNameLbl.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.albumNameLbl.Name = "albumNameLbl";
-            this.albumNameLbl.Size = new System.Drawing.Size(91, 25);
+            this.albumNameLbl.Size = new System.Drawing.Size(137, 36);
             this.albumNameLbl.TabIndex = 3;
             this.albumNameLbl.Text = "Album name";
             // 
@@ -109,9 +113,10 @@
             // 
             this.singerPhoto.Dock = System.Windows.Forms.DockStyle.Right;
             this.singerPhoto.ImageRotate = 0F;
-            this.singerPhoto.Location = new System.Drawing.Point(355, 0);
+            this.singerPhoto.Location = new System.Drawing.Point(532, 0);
+            this.singerPhoto.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.singerPhoto.Name = "singerPhoto";
-            this.singerPhoto.Size = new System.Drawing.Size(196, 154);
+            this.singerPhoto.Size = new System.Drawing.Size(294, 237);
             this.singerPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.singerPhoto.TabIndex = 2;
             this.singerPhoto.TabStop = false;
@@ -121,9 +126,10 @@
             this.singerNameLbl.BackColor = System.Drawing.Color.Transparent;
             this.singerNameLbl.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.singerNameLbl.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.singerNameLbl.Location = new System.Drawing.Point(56, 59);
+            this.singerNameLbl.Location = new System.Drawing.Point(84, 91);
+            this.singerNameLbl.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.singerNameLbl.Name = "singerNameLbl";
-            this.singerNameLbl.Size = new System.Drawing.Size(111, 29);
+            this.singerNameLbl.Size = new System.Drawing.Size(169, 43);
             this.singerNameLbl.TabIndex = 1;
             this.singerNameLbl.Text = "Singer name";
             // 
@@ -146,11 +152,12 @@
             // 
             // PhotoAndAlbumNameUc
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.guna2GradientPanel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "PhotoAndAlbumNameUc";
-            this.Size = new System.Drawing.Size(551, 154);
+            this.Size = new System.Drawing.Size(826, 237);
             this.Load += new System.EventHandler(this.PhotoAndAlbumNameUc_Load);
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
