@@ -55,6 +55,8 @@ namespace MusicPlayer.Presenters
                 var singer = new SingerUc();
                 singer.Location= new Point(x,23);
                 singer.Image = item.Image;
+                singer.SingerName = item.SingerName;
+                singer.SongName = item.SongName;
                 x += 250;
                 _view.SingersPanel.Controls.Add(singer);
             }
