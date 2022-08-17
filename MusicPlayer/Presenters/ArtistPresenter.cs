@@ -15,7 +15,9 @@ namespace MusicPlayer.Presenters
         public ArtistPresenter(IArtistView view)
         {
             _view = view;
+
             PhotoAndAlbumNameUc rihanna = new PhotoAndAlbumNameUc();
+            PhotoAndAlbumPresenter presenter=new PhotoAndAlbumPresenter(rihanna);
             _view.ArtistPicturePanel.Controls.Add(rihanna);
         }
     }

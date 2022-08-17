@@ -1,5 +1,6 @@
 ﻿using MusicPlayer.MusicDataBase;
 using MusicPlayer.MusicModels;
+using MusicPlayer.PresentersSingerAbout;
 using MusicPlayer.Views;
 using System;
 using System.Collections.Generic;
@@ -34,6 +35,7 @@ namespace MusicPlayer.Presenters
             SingerAbout singerAbout = new SingerAbout();
             _view.singerAbout = singerAbout;
             singerAbout.Dock = System.Windows.Forms.DockStyle.Fill;
+            MainPresenterSingerAbout presenterSingerAbout = new MainPresenterSingerAbout(singerAbout);
             _view.SearchPanel.Controls.Add(singerAbout);
 
             var musics = _db.Musics;

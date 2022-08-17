@@ -26,12 +26,12 @@ namespace MusicPlayer
 
         private void searchButton_Click(object sender, EventArgs e)
         {
-            SearchButton?.Invoke(sender,e);
+            SearchButton.Invoke(sender,e);
         }
 
         private void searchTb_MouseEnter(object sender, EventArgs e)
         {
-            MouseEnterEvent?.Invoke(sender, e);
+            MouseEnterEvent.Invoke(sender, e);
         }
     }
 }
