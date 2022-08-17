@@ -42,8 +42,11 @@
             this.musicPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.recomendAlbumsPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.animationPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.nextBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.prevBtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GradientPanel1.SuspendLayout();
             this.guna2GradientPanel2.SuspendLayout();
+            this.artistPicturePanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2GradientPanel1
@@ -232,6 +235,8 @@
             // 
             // artistPicturePanel
             // 
+            this.artistPicturePanel.Controls.Add(this.prevBtn);
+            this.artistPicturePanel.Controls.Add(this.nextBtn);
             this.artistPicturePanel.Location = new System.Drawing.Point(206, 150);
             this.artistPicturePanel.Name = "artistPicturePanel";
             this.artistPicturePanel.Size = new System.Drawing.Size(551, 154);
@@ -258,6 +263,41 @@
             this.animationPanel.Size = new System.Drawing.Size(551, 144);
             this.animationPanel.TabIndex = 6;
             // 
+            // nextBtn
+            // 
+            this.nextBtn.BackColor = System.Drawing.Color.Transparent;
+            this.nextBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.nextBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.nextBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.nextBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.nextBtn.FillColor = System.Drawing.Color.Transparent;
+            this.nextBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.nextBtn.ForeColor = System.Drawing.Color.Transparent;
+            this.nextBtn.Image = global::MusicPlayer.Properties.Resources.icons8_right_button_80;
+            this.nextBtn.ImageSize = new System.Drawing.Size(60, 60);
+            this.nextBtn.Location = new System.Drawing.Point(518, 61);
+            this.nextBtn.Name = "nextBtn";
+            this.nextBtn.Size = new System.Drawing.Size(33, 34);
+            this.nextBtn.TabIndex = 5;
+            // 
+            // prevBtn
+            // 
+            this.prevBtn.BackColor = System.Drawing.Color.Transparent;
+            this.prevBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.prevBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.prevBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.prevBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.prevBtn.FillColor = System.Drawing.Color.Transparent;
+            this.prevBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.prevBtn.ForeColor = System.Drawing.Color.White;
+            this.prevBtn.Image = global::MusicPlayer.Properties.Resources.icons8_prev_80;
+            this.prevBtn.ImageSize = new System.Drawing.Size(60, 60);
+            this.prevBtn.Location = new System.Drawing.Point(0, 61);
+            this.prevBtn.Name = "prevBtn";
+            this.prevBtn.Size = new System.Drawing.Size(33, 32);
+            this.prevBtn.TabIndex = 6;
+            this.prevBtn.Text = " ";
+            // 
             // ArtistView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -275,6 +315,7 @@
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel2.ResumeLayout(false);
             this.guna2GradientPanel2.PerformLayout();
+            this.artistPicturePanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -295,5 +336,7 @@
         private Guna.UI2.WinForms.Guna2GradientPanel musicPanel;
         private Guna.UI2.WinForms.Guna2GradientPanel recomendAlbumsPanel;
         private Guna.UI2.WinForms.Guna2GradientPanel animationPanel;
+        private Guna.UI2.WinForms.Guna2Button nextBtn;
+        private Guna.UI2.WinForms.Guna2Button prevBtn;
     }
 }

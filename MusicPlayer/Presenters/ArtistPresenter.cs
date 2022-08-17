@@ -15,9 +15,13 @@ namespace MusicPlayer.Presenters
         public ArtistPresenter(IArtistView view)
         {
             _view = view;
-
-            PhotoAndAlbumNameUc rihanna = new PhotoAndAlbumNameUc();
-            PhotoAndAlbumPresenter presenter=new PhotoAndAlbumPresenter(rihanna);
+            PhotoAndAlbumNameUc rihanna = new PhotoAndAlbumNameUc()
+            {
+                SingerName = "Rihanna in Berlin",
+                AlbumName = "Columbiohalle",
+                Image= "https://cdn11.bigcommerce.com/s-8e25iavqdi/images/stencil/1280x1280/products/8167/7955/only-girl-in-the-world-album-cover-sticker__36794.1539263636.jpg?c=2"
+            };
+            PhotoAndAlbumPresenter presenter = new PhotoAndAlbumPresenter(rihanna);
             _view.ArtistPicturePanel.Controls.Add(rihanna);
         }
     }

@@ -30,8 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.prevBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.nextBtn = new Guna.UI2.WinForms.Guna2Button();
             this.albumNameLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.singerPhoto = new Guna.UI2.WinForms.Guna2PictureBox();
             this.singerNameLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -45,8 +43,6 @@
             // guna2GradientPanel1
             // 
             this.guna2GradientPanel1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.guna2GradientPanel1.Controls.Add(this.prevBtn);
-            this.guna2GradientPanel1.Controls.Add(this.nextBtn);
             this.guna2GradientPanel1.Controls.Add(this.albumNameLbl);
             this.guna2GradientPanel1.Controls.Add(this.singerPhoto);
             this.guna2GradientPanel1.Controls.Add(this.singerNameLbl);
@@ -57,42 +53,6 @@
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.Size = new System.Drawing.Size(551, 154);
             this.guna2GradientPanel1.TabIndex = 0;
-            // 
-            // prevBtn
-            // 
-            this.prevBtn.BackColor = System.Drawing.Color.Transparent;
-            this.prevBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.prevBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.prevBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.prevBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.prevBtn.FillColor = System.Drawing.Color.Transparent;
-            this.prevBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.prevBtn.ForeColor = System.Drawing.Color.White;
-            this.prevBtn.Image = global::MusicPlayer.Properties.Resources.icons8_prev_80;
-            this.prevBtn.ImageSize = new System.Drawing.Size(60, 60);
-            this.prevBtn.Location = new System.Drawing.Point(0, 59);
-            this.prevBtn.Name = "prevBtn";
-            this.prevBtn.Size = new System.Drawing.Size(33, 32);
-            this.prevBtn.TabIndex = 5;
-            this.prevBtn.Click += new System.EventHandler(this.prevBtn_Click);
-            // 
-            // nextBtn
-            // 
-            this.nextBtn.BackColor = System.Drawing.Color.Transparent;
-            this.nextBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.nextBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.nextBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.nextBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.nextBtn.FillColor = System.Drawing.Color.Transparent;
-            this.nextBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.nextBtn.ForeColor = System.Drawing.Color.Transparent;
-            this.nextBtn.Image = global::MusicPlayer.Properties.Resources.icons8_right_button_80;
-            this.nextBtn.ImageSize = new System.Drawing.Size(60, 60);
-            this.nextBtn.Location = new System.Drawing.Point(515, 59);
-            this.nextBtn.Name = "nextBtn";
-            this.nextBtn.Size = new System.Drawing.Size(33, 34);
-            this.nextBtn.TabIndex = 4;
-            this.nextBtn.Click += new System.EventHandler(this.nextBtn_Click);
             // 
             // albumNameLbl
             // 
@@ -142,7 +102,6 @@
             // 
             this.timer1.Enabled = true;
             this.timer1.Interval = 3000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // PhotoAndAlbumNameUc
             // 
@@ -151,7 +110,6 @@
             this.Controls.Add(this.guna2GradientPanel1);
             this.Name = "PhotoAndAlbumNameUc";
             this.Size = new System.Drawing.Size(551, 154);
-            this.Load += new System.EventHandler(this.PhotoAndAlbumNameUc_Load);
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.singerPhoto)).EndInit();
@@ -165,8 +123,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox singerPhoto;
         private Guna.UI2.WinForms.Guna2HtmlLabel singerNameLbl;
         private Guna.UI2.WinForms.Guna2HtmlLabel albumNameLbl;
-        private Guna.UI2.WinForms.Guna2Button nextBtn;
-        private Guna.UI2.WinForms.Guna2Button prevBtn;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private System.Windows.Forms.Timer timer1;
